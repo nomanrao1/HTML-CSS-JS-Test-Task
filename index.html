@@ -1,0 +1,2204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <script src="./js/index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+          <div
+            class="d-flex flex-column align-items-center align-items-sm-end pt-2 text-white min-vh-100"
+          >
+            <a
+              href="/"
+              class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+            >
+              <img src="./img/logo.png" class="logo_img_set" />
+            </a>
+            <ul
+              class="nav flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start whole_side_menu_width"
+              id="menu"
+            >
+              <li class="li_sidenav">
+                <a
+                  href="#submenu1"
+                  data-bs-toggle="collapse"
+                  class="nav-link px-0 align-middle li_a_sidenav"
+                >
+                  <img
+                    src="./img/dashboard_icon.png"
+                    alt="dashboard"
+                    class="dashboard_menu_icons"
+                  />
+                  <span class="ms-1 d-none d-sm-inline active">Dashboard</span>
+                </a>
+                <ul
+                  class="collapse show nav flex-column whole_side_menu_dropdown"
+                  id="submenu1"
+                  data-bs-parent="#menu"
+                >
+                  <li class="w-100">
+                    <a href="#" class="nav-link px-0">
+                      <span class="d-none d-sm-inline text-white">Performance</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link px-0">
+                      <span class="d-none d-sm-inline text-white">Compaigns</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link px-0">
+                      <span class="d-none d-sm-inline text-white">My Creators</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link px-0">
+                      <span class="d-none d-sm-inline text-white">Billing</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link px-0">
+                      <span class="d-none d-sm-inline text-white">Reports</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link px-0">
+                      <span class="d-none d-sm-inline text-white">My influencers</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="li_sidenav">
+                <a href="#" class="li_a_sidenav_wselect nav-link px-0 align-middle active">
+                  <img src="./img/profile.png" alt="dashboard" class="dashboard_menu_icons" />
+                  <span class="ms-1 d-none d-sm-inline">Profile</span>
+                </a>
+              </li>
+              <li class="li_sidenav">
+                <a href="#" class="li_a_sidenav_wselect nav-link px-0 align-middle active">
+                  <img src="./img/product.png" alt="dashboard" class="dashboard_menu_icons" />
+                  <span class="ms-1 d-none d-sm-inline">Products</span>
+                </a>
+              </li>
+              <li class="li_sidenav">
+                <a href="#" class="li_a_sidenav_wselect nav-link px-0 align-middle">
+                  <img src="./img/creative.png" alt="dashboard" class="dashboard_menu_icons" />
+                  <span class="ms-1 d-none d-sm-inline">Creative</span>
+                </a>
+              </li>
+             
+              <li class="li_sidenav">
+                <a href="#" class="li_a_sidenav_wselect nav-link px-0 align-middle">
+                    <img
+                      src="./img/bussiness.png"
+                      alt="dashboard"
+                      class="dashboard_menu_icons"
+                    />
+                  <span class="ms-1 d-none d-sm-inline">Bussiness Card</span>
+                </a>
+              </li>
+              <li class="li_sidenav">
+                <a href="#" class="li_a_sidenav_wselect nav-link px-0 align-middle">
+                    <img
+                      src="./img/asset.png"
+                      alt="dashboard"
+                      class="dashboard_menu_icons"
+                    />
+                  <span class="ms-1 d-none d-sm-inline">Asset Library</span>
+                </a>
+              </li>
+              <li class="li_sidenav">
+                <a href="#" class="li_a_sidenav_wselect nav-link px-0 align-middle">
+                    <img
+                      src="./img/domain.png"
+                      alt="dashboard"
+                      class="dashboard_menu_icons"
+                    />
+                  <span class="ms-1 d-none d-sm-inline">Domain</span>
+                </a>
+              </li>
+              <li class="li_sidenav">
+                <a href="#" class="li_a_sidenav_wselect nav-link px-0 align-middle">
+                    <img
+                      src="./img/request.png"
+                      alt="dashboard"
+                      class="dashboard_menu_icons"
+                    />
+                  <span class="ms-1 d-none d-sm-inline">Creative Request</span>
+                </a>
+              </li>
+              <li class="li_sidenav">
+                <a href="#" class="li_a_sidenav_wselect nav-link px-0 align-middle">
+                    <img
+                      src="./img/commission.png"
+                      alt="dashboard"
+                      class="dashboard_menu_icons"
+                    />
+                  <span class="ms-1 d-none d-sm-inline">Commissions</span>
+                </a>
+              </li>
+              <li class="li_sidenav">
+                <a href="#" class="li_a_sidenav_wselect nav-link px-0 align-middle">
+                    <img
+                      src="./img/payment.png"
+                      alt="dashboard"
+                      class="dashboard_menu_icons"
+                    />
+                  <span class="ms-1 d-none d-sm-inline">Payments</span>
+                </a>
+              </li>
+              <li class="li_sidenav">
+                <a href="#" class="li_a_sidenav_wselect nav-link px-0 align-middle">
+                    <img
+                      src="./img/referrals.png"
+                      alt="dashboard"
+                      class="dashboard_menu_icons"
+                    />
+                  <span class="ms-1 d-none d-sm-inline">Referrals</span>
+                </a>
+              </li>
+              <li class="li_sidenav">
+                <a href="#" class="li_a_sidenav_wselect nav-link px-0 align-middle">
+                    <img
+                      src="./img/transection.png"
+                      alt="dashboard"
+                      class="dashboard_menu_icons"
+                    />
+                  <span class="ms-1 d-none d-sm-inline">Transetion</span>
+                </a>
+              </li>
+              <li class="li_sidenav">
+                <a href="#" class="li_a_sidenav_wselect nav-link px-0 align-middle">
+                    <img
+                      src="./img/manager.png"
+                      alt="dashboard"
+                      class="dashboard_menu_icons"
+                    />
+                  <span class="ms-1 d-none d-sm-inline">Manager</span>
+                </a>
+              </li>
+              <li class="li_sidenav">
+                <a href="#" class="li_a_sidenav_wselect nav-link px-0 align-middle">
+                    <img
+                      src="./img/settlement.png"
+                      alt="dashboard"
+                      class="dashboard_menu_icons"
+                    />
+                  <span class="ms-1 d-none d-sm-inline">Settlement</span>
+                </a>
+              </li>
+              <li class="li_sidenav">
+                <a href="#" class="li_a_sidenav_wselect nav-link px-0 align-middle">
+                    <img
+                      src="./img/close.png"
+                      alt="dashboard"
+                      class="dashboard_menu_icons"
+                    />
+                  <span class="ms-1 d-none d-sm-inline">Close Acount</span>
+                </a>
+              </li>
+            </ul> 
+          </div>
+          <div class="my-5 d-grid gap-2 btn-submit">
+            <button class="btn btn-success px-5" type="button">Log out</button>
+        </div>
+        </div>
+
+        <!-- Right side -->
+        <div class="col py-3 px-3 right_side_bg">
+          <!-- bread crumbs and profile details -->
+          <div
+            class="d-flex flex-row justify-content-between align-items-center"
+          >
+            <div>
+              <nav aria-label="Page breadcrumb">
+                <ol class="breadcrumb">
+                  <li
+                    class="breadcrumb-item breadcrumb-item-pre active"
+                    aria-current="page"
+                  >
+                    Dashboard
+                  </li>
+                  <li class="breadcrumb-item breadcrumb-item-post">
+                    My Creators
+                  </li>
+                </ol>
+              </nav>
+            </div>
+
+            <div
+              class="d-flex flex-row justify-content-between align-items-center"
+            >
+              <div
+                class="mx-4 d-flex flex-row justify-content-between align-items-center"
+              >
+                <div type="button" class="mx-2 position-relative">
+                  <img
+                    src="./img/notification.png"
+                    class="dashboard_menu_icons"
+                  />
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle"
+                  >
+                  </span>
+                </div>
+                <div type="button" class="mx-3 position-relative">
+                  <img src="./img/message.png" class="dashboard_menu_icons" />
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle"
+                  >
+                  </span>
+                </div>
+              </div>
+              <div
+                class="mx-2 d-flex flex-row justify-content-between align-items-center"
+              >
+                <div>
+                  <img
+                    src="./img/profile.png"
+                    alt="Alexander Mark"
+                    class="profile_img_set"
+                  />
+                </div>
+                <div class="mx-2">
+                  <div class="profile_name">Alexander Mark</div>
+                  <div class="profile_role">Manager</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- bread crumbs and profile details -->
+
+          <!-- greeting or explore button -->
+          <div
+            class="mt-3 d-flex flex-row justify-content-start align-items-end"
+          >
+            <div class="greeting_main_div">
+              <div class="greeting_time">GOOD MORNING</div>
+              <div class="greeting_name">
+                Alexander Mark
+                <span class="greeting_message"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore.</span
+                >
+              </div>
+            </div>
+            <div class="explore_main_div">
+              <button class="button-19 explore-creators" role="button">
+                + Explore New Creators
+              </button>
+            </div>
+          </div>
+          <!-- greeting or explore button -->
+
+          <!-- accordion start -->
+          <div class="mt-4">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    <div
+                      class="d-flex flex-column justify-content-start align-items-start"
+                    >
+                      <div class="accordion_button_head">My Creators</div>
+                      <div class="accordion_button_body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod.
+                      </div>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="panelsStayOpen-headingOne"
+                >
+                  <div class="accordion-body">
+                    <div
+                      id="carouselExampleIndicators"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators"
+                          data-bs-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators"
+                          data-bs-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators"
+                          data-bs-slide-to="3"
+                          aria-label="Slide 4"
+                        ></button>
+                        <button
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators"
+                          data-bs-slide-to="4"
+                          aria-label="Slide 5"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="card-group">
+                            <div
+                              class="card p-3"
+                              style="width: 18rem; border-radius: 10px"
+                            >
+                              <div class="card_profile_set">
+                                <div
+                                  type="button"
+                                  class="mx-2 position-relative"
+                                >
+                                  <img
+                                    src="./img/profile.png"
+                                    class="card_img_setting"
+                                    alt="Profile"
+                                  />
+                                  <span
+                                    class="position-absolute top-10 start-80 translate-middle p-2 bg-success border border-light rounded-circle"
+                                  >
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title-one">Henry Paul</h5>
+                                <div class="card-email">henry.p@mail.com</div>
+                                <div class="card-role">123 Creatives</div>
+                              </div>
+                            </div>
+                            <div
+                              class="card p-3"
+                              style="width: 18rem; border-radius: 10px"
+                            >
+                              <div class="card_profile_set">
+                                <div
+                                  type="button"
+                                  class="mx-2 position-relative"
+                                >
+                                  <img
+                                    src="./img/profile.png"
+                                    class="card_img_setting"
+                                    alt="Profile"
+                                  />
+                                  <span
+                                    class="position-absolute top-10 start-80 translate-middle p-2 bg-success border border-light rounded-circle"
+                                  >
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title-one">Henry Paul</h5>
+                                <div class="card-email">henry.p@mail.com</div>
+                                <div class="card-role">123 Creatives</div>
+                              </div>
+                            </div>
+                            <div
+                              class="card p-3"
+                              style="width: 18rem; border-radius: 10px"
+                            >
+                              <div class="card_profile_set">
+                                <div
+                                  type="button"
+                                  class="mx-2 position-relative"
+                                >
+                                  <img
+                                    src="./img/profile.png"
+                                    class="card_img_setting"
+                                    alt="Profile"
+                                  />
+                                  <span
+                                    class="position-absolute top-10 start-80 translate-middle p-2 bg-success border border-light rounded-circle"
+                                  >
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title-one">Henry Paul</h5>
+                                <div class="card-email">henry.p@mail.com</div>
+                                <div class="card-role">123 Creatives</div>
+                              </div>
+                            </div>
+                            <div
+                              class="card p-3"
+                              style="width: 18rem; border-radius: 10px"
+                            >
+                              <div class="card_profile_set">
+                                <div
+                                  type="button"
+                                  class="mx-2 position-relative"
+                                >
+                                  <img
+                                    src="./img/profile.png"
+                                    class="card_img_setting"
+                                    alt="Profile"
+                                  />
+                                  <span
+                                    class="position-absolute top-10 start-80 translate-middle p-2 bg-success border border-light rounded-circle"
+                                  >
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title-one">Henry Paul</h5>
+                                <div class="card-email">henry.p@mail.com</div>
+                                <div class="card-role">123 Creatives</div>
+                              </div>
+                            </div>
+                            <div
+                              class="card p-3"
+                              style="width: 18rem; border-radius: 10px"
+                            >
+                              <div class="card_profile_set">
+                                <div
+                                  type="button"
+                                  class="mx-2 position-relative"
+                                >
+                                  <img
+                                    src="./img/profile.png"
+                                    class="card_img_setting"
+                                    alt="Profile"
+                                  />
+                                  <span
+                                    class="position-absolute top-10 start-80 translate-middle p-2 bg-success border border-light rounded-circle"
+                                  >
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title-one">Henry Paul</h5>
+                                <div class="card-email">henry.p@mail.com</div>
+                                <div class="card-role">123 Creatives</div>
+                              </div>
+                            </div>
+                            <div
+                              class="card p-3"
+                              style="width: 18rem; border-radius: 10px"
+                            >
+                              <div class="card_profile_set">
+                                <div
+                                  type="button"
+                                  class="mx-2 position-relative"
+                                >
+                                  <img
+                                    src="./img/profile.png"
+                                    class="card_img_setting"
+                                    alt="Profile"
+                                  />
+                                  <span
+                                    class="position-absolute top-10 start-80 translate-middle p-2 bg-success border border-light rounded-circle"
+                                  >
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title-one">Henry Paul</h5>
+                                <div class="card-email">henry.p@mail.com</div>
+                                <div class="card-role">123 Creatives</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="card-group">
+                            <div
+                              class="card p-3"
+                              style="width: 18rem; border-radius: 10px"
+                            >
+                              <div class="card_profile_set">
+                                <div
+                                  type="button"
+                                  class="mx-2 position-relative"
+                                >
+                                  <img
+                                    src="./img/profile.png"
+                                    class="card_img_setting"
+                                    alt="Profile"
+                                  />
+                                  <span
+                                    class="position-absolute top-10 start-80 translate-middle p-2 bg-success border border-light rounded-circle"
+                                  >
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title-one">Henry Paul</h5>
+                                <div class="card-email">henry.p@mail.com</div>
+                                <div class="card-role">123 Creatives</div>
+                              </div>
+                            </div>
+                            <div
+                              class="card p-3"
+                              style="width: 18rem; border-radius: 10px"
+                            >
+                              <div class="card_profile_set">
+                                <div
+                                  type="button"
+                                  class="mx-2 position-relative"
+                                >
+                                  <img
+                                    src="./img/profile.png"
+                                    class="card_img_setting"
+                                    alt="Profile"
+                                  />
+                                  <span
+                                    class="position-absolute top-10 start-80 translate-middle p-2 bg-success border border-light rounded-circle"
+                                  >
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title-one">Henry Paul</h5>
+                                <div class="card-email">henry.p@mail.com</div>
+                                <div class="card-role">123 Creatives</div>
+                              </div>
+                            </div>
+                            <div
+                              class="card p-3"
+                              style="width: 18rem; border-radius: 10px"
+                            >
+                              <div class="card_profile_set">
+                                <div
+                                  type="button"
+                                  class="mx-2 position-relative"
+                                >
+                                  <img
+                                    src="./img/profile.png"
+                                    class="card_img_setting"
+                                    alt="Profile"
+                                  />
+                                  <span
+                                    class="position-absolute top-10 start-80 translate-middle p-2 bg-success border border-light rounded-circle"
+                                  >
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title-one">Henry Paul</h5>
+                                <div class="card-email">henry.p@mail.com</div>
+                                <div class="card-role">123 Creatives</div>
+                              </div>
+                            </div>
+                            <div
+                              class="card p-3"
+                              style="width: 18rem; border-radius: 10px"
+                            >
+                              <div class="card_profile_set">
+                                <div
+                                  type="button"
+                                  class="mx-2 position-relative"
+                                >
+                                  <img
+                                    src="./img/profile.png"
+                                    class="card_img_setting"
+                                    alt="Profile"
+                                  />
+                                  <span
+                                    class="position-absolute top-10 start-80 translate-middle p-2 bg-success border border-light rounded-circle"
+                                  >
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title-one">Henry Paul</h5>
+                                <div class="card-email">henry.p@mail.com</div>
+                                <div class="card-role">123 Creatives</div>
+                              </div>
+                            </div>
+                            <div
+                              class="card p-3"
+                              style="width: 18rem; border-radius: 10px"
+                            >
+                              <div class="card_profile_set">
+                                <div
+                                  type="button"
+                                  class="mx-2 position-relative"
+                                >
+                                  <img
+                                    src="./img/profile.png"
+                                    class="card_img_setting"
+                                    alt="Profile"
+                                  />
+                                  <span
+                                    class="position-absolute top-10 start-80 translate-middle p-2 bg-success border border-light rounded-circle"
+                                  >
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title-one">Henry Paul</h5>
+                                <div class="card-email">henry.p@mail.com</div>
+                                <div class="card-role">123 Creatives</div>
+                              </div>
+                            </div>
+                            <div
+                              class="card p-3"
+                              style="width: 18rem; border-radius: 10px"
+                            >
+                              <div class="card_profile_set">
+                                <div
+                                  type="button"
+                                  class="mx-2 position-relative"
+                                >
+                                  <img
+                                    src="./img/profile.png"
+                                    class="card_img_setting"
+                                    alt="Profile"
+                                  />
+                                  <span
+                                    class="position-absolute top-10 start-80 translate-middle p-2 bg-success border border-light rounded-circle"
+                                  >
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title-one">Henry Paul</h5>
+                                <div class="card-email">henry.p@mail.com</div>
+                                <div class="card-role">123 Creatives</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseTwo"
+                  >
+                    <div
+                      class="d-flex flex-column justify-content-start align-items-start"
+                    >
+                      <div class="accordion_button_head">
+                        Creator’s Performance
+                      </div>
+                      <div class="accordion_button_body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod.
+                      </div>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingTwo"
+                >
+                  <div class="accordion-body">
+                    <div
+                      class="d-flex flex-row justify-content-start align-items-start"
+                    >
+                      <!-- left side -->
+                      <div
+                        class="d-flex flex-column justify-content-center align-items-center"
+                      >
+                        <div class="second_accod_left_box">
+                          <div class="card acc-card bg-white text-black">
+                            <img
+                              src="./img/creatorsone.png"
+                              class="card-img card_second_accod_left_box"
+                              alt="..."
+                            />
+                            <div class="card-img-overlay acc-card-img-overlay">
+                              <div
+                                class="card-hw h-100 p-3 d-flex flex-column justify-content-between align-items-start"
+                              >
+                                <div class="acc-card-img-overlay-head">31</div>
+                                <div class="acc-card-img-overlay-body">
+                                  Creators
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="second_accod_left_box">
+                          <div class="card acc-card bg-white text-black">
+                            <img
+                              src="./img/creatorsone.png"
+                              class="card-img card_second_accod_left_box"
+                              alt="..."
+                            />
+                            <div class="card-img-overlay acc-card-img-overlay">
+                              <div
+                                class="card-hw h-100 p-3 d-flex flex-column justify-content-between align-items-start"
+                              >
+                                <div class="acc-card-img-overlay-head">31</div>
+                                <div class="acc-card-img-overlay-body">
+                                  Creators
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="second_accod_left_box">
+                          <div class="card acc-card bg-white text-black">
+                            <img
+                              src="./img/creatorsone.png"
+                              class="card-img card_second_accod_left_box"
+                              alt="..."
+                            />
+                            <div class="card-img-overlay acc-card-img-overlay">
+                              <div
+                                class="card-hw h-100 p-3 d-flex flex-column justify-content-between align-items-start"
+                              >
+                                <div class="acc-card-img-overlay-head">31</div>
+                                <div class="acc-card-img-overlay-body">
+                                  Creators
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="second_accod_left_box">
+                          <div class="card acc-card bg-white text-black">
+                            <img
+                              src="./img/creatorsone.png"
+                              class="card-img card_second_accod_left_box"
+                              alt="..."
+                            />
+                            <div class="card-img-overlay acc-card-img-overlay">
+                              <div
+                                class="card-hw h-100 p-3 d-flex flex-column justify-content-between align-items-start"
+                              >
+                                <div class="acc-card-img-overlay-head">31</div>
+                                <div class="acc-card-img-overlay-body">
+                                  Creators
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="second_accod_left_box">
+                          <div class="card acc-card bg-white text-black">
+                            <img
+                              src="./img/creatorsone.png"
+                              class="card-img card_second_accod_left_box"
+                              alt="..."
+                            />
+                            <div class="card-img-overlay acc-card-img-overlay">
+                              <div
+                                class="card-hw h-100 p-3 d-flex flex-column justify-content-between align-items-start"
+                              >
+                                <div class="acc-card-img-overlay-head">31</div>
+                                <div class="acc-card-img-overlay-body">
+                                  Creators
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- left side -->
+
+                      <!-- right side -->
+                      <div class="second_accod_right_box">
+                        <div class="card acc-right-card">
+                          <div class="card-body">
+                            <!--2nd accordion card body -->
+                            <div class="overflow-auto">
+                              <div
+                                class="d-flex flex-row justify-content-start align-items-center"
+                              >
+                                <div class="acc_right_card_profile_main">
+                                  <div
+                                    class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                                  >
+                                    <div>
+                                      <img
+                                        src="./img/profile.png"
+                                        alt="Alexander Mark"
+                                        class="acc_right_card_profile_img_set"
+                                      />
+                                    </div>
+                                    <div
+                                      class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                                    >
+                                      <div class="acc_right_card_profile_name">
+                                        Alexander Mark
+                                      </div>
+                                      <div class="acc_right_card_profile_role">
+                                        Manager
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="acc_right_card_progress_bar_main">
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 15%"
+                                      aria-valuenow="15"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-success"
+                                      role="progressbar"
+                                      style="width: 30%"
+                                      aria-valuenow="30"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-info"
+                                      role="progressbar"
+                                      style="width: 20%"
+                                      aria-valuenow="20"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div
+                                class="d-flex flex-row justify-content-start align-items-center"
+                              >
+                                <div class="acc_right_card_profile_main">
+                                  <div
+                                    class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                                  >
+                                    <div>
+                                      <img
+                                        src="./img/profile.png"
+                                        alt="Alexander Mark"
+                                        class="acc_right_card_profile_img_set"
+                                      />
+                                    </div>
+                                    <div
+                                      class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                                    >
+                                      <div class="acc_right_card_profile_name">
+                                        Alexander Mark
+                                      </div>
+                                      <div class="acc_right_card_profile_role">
+                                        Manager
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="acc_right_card_progress_bar_main">
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 15%"
+                                      aria-valuenow="15"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-success"
+                                      role="progressbar"
+                                      style="width: 30%"
+                                      aria-valuenow="30"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-info"
+                                      role="progressbar"
+                                      style="width: 20%"
+                                      aria-valuenow="20"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div
+                                class="d-flex flex-row justify-content-start align-items-center"
+                              >
+                                <div class="acc_right_card_profile_main">
+                                  <div
+                                    class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                                  >
+                                    <div>
+                                      <img
+                                        src="./img/profile.png"
+                                        alt="Alexander Mark"
+                                        class="acc_right_card_profile_img_set"
+                                      />
+                                    </div>
+                                    <div
+                                      class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                                    >
+                                      <div class="acc_right_card_profile_name">
+                                        Alexander Mark
+                                      </div>
+                                      <div class="acc_right_card_profile_role">
+                                        Manager
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="acc_right_card_progress_bar_main">
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 15%"
+                                      aria-valuenow="15"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-success"
+                                      role="progressbar"
+                                      style="width: 30%"
+                                      aria-valuenow="30"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-info"
+                                      role="progressbar"
+                                      style="width: 20%"
+                                      aria-valuenow="20"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div
+                                class="d-flex flex-row justify-content-start align-items-center"
+                              >
+                                <div class="acc_right_card_profile_main">
+                                  <div
+                                    class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                                  >
+                                    <div>
+                                      <img
+                                        src="./img/profile.png"
+                                        alt="Alexander Mark"
+                                        class="acc_right_card_profile_img_set"
+                                      />
+                                    </div>
+                                    <div
+                                      class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                                    >
+                                      <div class="acc_right_card_profile_name">
+                                        Alexander Mark
+                                      </div>
+                                      <div class="acc_right_card_profile_role">
+                                        Manager
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="acc_right_card_progress_bar_main">
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 15%"
+                                      aria-valuenow="15"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-success"
+                                      role="progressbar"
+                                      style="width: 30%"
+                                      aria-valuenow="30"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-info"
+                                      role="progressbar"
+                                      style="width: 20%"
+                                      aria-valuenow="20"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div
+                                class="d-flex flex-row justify-content-start align-items-center"
+                              >
+                                <div class="acc_right_card_profile_main">
+                                  <div
+                                    class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                                  >
+                                    <div>
+                                      <img
+                                        src="./img/profile.png"
+                                        alt="Alexander Mark"
+                                        class="acc_right_card_profile_img_set"
+                                      />
+                                    </div>
+                                    <div
+                                      class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                                    >
+                                      <div class="acc_right_card_profile_name">
+                                        Alexander Mark
+                                      </div>
+                                      <div class="acc_right_card_profile_role">
+                                        Manager
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="acc_right_card_progress_bar_main">
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 15%"
+                                      aria-valuenow="15"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-success"
+                                      role="progressbar"
+                                      style="width: 30%"
+                                      aria-valuenow="30"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-info"
+                                      role="progressbar"
+                                      style="width: 20%"
+                                      aria-valuenow="20"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div
+                                class="d-flex flex-row justify-content-start align-items-center"
+                              >
+                                <div class="acc_right_card_profile_main">
+                                  <div
+                                    class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                                  >
+                                    <div>
+                                      <img
+                                        src="./img/profile.png"
+                                        alt="Alexander Mark"
+                                        class="acc_right_card_profile_img_set"
+                                      />
+                                    </div>
+                                    <div
+                                      class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                                    >
+                                      <div class="acc_right_card_profile_name">
+                                        Alexander Mark
+                                      </div>
+                                      <div class="acc_right_card_profile_role">
+                                        Manager
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="acc_right_card_progress_bar_main">
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 15%"
+                                      aria-valuenow="15"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-success"
+                                      role="progressbar"
+                                      style="width: 30%"
+                                      aria-valuenow="30"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-info"
+                                      role="progressbar"
+                                      style="width: 20%"
+                                      aria-valuenow="20"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div
+                                class="d-flex flex-row justify-content-start align-items-center"
+                              >
+                                <div class="acc_right_card_profile_main">
+                                  <div
+                                    class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                                  >
+                                    <div>
+                                      <img
+                                        src="./img/profile.png"
+                                        alt="Alexander Mark"
+                                        class="acc_right_card_profile_img_set"
+                                      />
+                                    </div>
+                                    <div
+                                      class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                                    >
+                                      <div class="acc_right_card_profile_name">
+                                        Alexander Mark
+                                      </div>
+                                      <div class="acc_right_card_profile_role">
+                                        Manager
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="acc_right_card_progress_bar_main">
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 15%"
+                                      aria-valuenow="15"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-success"
+                                      role="progressbar"
+                                      style="width: 30%"
+                                      aria-valuenow="30"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-info"
+                                      role="progressbar"
+                                      style="width: 20%"
+                                      aria-valuenow="20"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div
+                                class="d-flex flex-row justify-content-start align-items-center"
+                              >
+                                <div class="acc_right_card_profile_main">
+                                  <div
+                                    class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                                  >
+                                    <div>
+                                      <img
+                                        src="./img/profile.png"
+                                        alt="Alexander Mark"
+                                        class="acc_right_card_profile_img_set"
+                                      />
+                                    </div>
+                                    <div
+                                      class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                                    >
+                                      <div class="acc_right_card_profile_name">
+                                        Alexander Mark
+                                      </div>
+                                      <div class="acc_right_card_profile_role">
+                                        Manager
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="acc_right_card_progress_bar_main">
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 15%"
+                                      aria-valuenow="15"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-success"
+                                      role="progressbar"
+                                      style="width: 30%"
+                                      aria-valuenow="30"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-info"
+                                      role="progressbar"
+                                      style="width: 20%"
+                                      aria-valuenow="20"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div
+                                class="d-flex flex-row justify-content-start align-items-center"
+                              >
+                                <div class="acc_right_card_profile_main">
+                                  <div
+                                    class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                                  >
+                                    <div>
+                                      <img
+                                        src="./img/profile.png"
+                                        alt="Alexander Mark"
+                                        class="acc_right_card_profile_img_set"
+                                      />
+                                    </div>
+                                    <div
+                                      class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                                    >
+                                      <div class="acc_right_card_profile_name">
+                                        Alexander Mark
+                                      </div>
+                                      <div class="acc_right_card_profile_role">
+                                        Manager
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="acc_right_card_progress_bar_main">
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 15%"
+                                      aria-valuenow="15"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-success"
+                                      role="progressbar"
+                                      style="width: 30%"
+                                      aria-valuenow="30"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-info"
+                                      role="progressbar"
+                                      style="width: 20%"
+                                      aria-valuenow="20"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div
+                                class="d-flex flex-row justify-content-start align-items-center"
+                              >
+                                <div class="acc_right_card_profile_main">
+                                  <div
+                                    class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                                  >
+                                    <div>
+                                      <img
+                                        src="./img/profile.png"
+                                        alt="Alexander Mark"
+                                        class="acc_right_card_profile_img_set"
+                                      />
+                                    </div>
+                                    <div
+                                      class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                                    >
+                                      <div class="acc_right_card_profile_name">
+                                        Alexander Mark
+                                      </div>
+                                      <div class="acc_right_card_profile_role">
+                                        Manager
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="acc_right_card_progress_bar_main">
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 15%"
+                                      aria-valuenow="15"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-success"
+                                      role="progressbar"
+                                      style="width: 30%"
+                                      aria-valuenow="30"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-info"
+                                      role="progressbar"
+                                      style="width: 20%"
+                                      aria-valuenow="20"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div
+                                class="d-flex flex-row justify-content-start align-items-center"
+                              >
+                                <div class="acc_right_card_profile_main">
+                                  <div
+                                    class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                                  >
+                                    <div>
+                                      <img
+                                        src="./img/profile.png"
+                                        alt="Alexander Mark"
+                                        class="acc_right_card_profile_img_set"
+                                      />
+                                    </div>
+                                    <div
+                                      class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                                    >
+                                      <div class="acc_right_card_profile_name">
+                                        Alexander Mark
+                                      </div>
+                                      <div class="acc_right_card_profile_role">
+                                        Manager
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="acc_right_card_progress_bar_main">
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 15%"
+                                      aria-valuenow="15"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-success"
+                                      role="progressbar"
+                                      style="width: 30%"
+                                      aria-valuenow="30"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-info"
+                                      role="progressbar"
+                                      style="width: 20%"
+                                      aria-valuenow="20"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div
+                                class="d-flex flex-row justify-content-start align-items-center"
+                              >
+                                <div class="acc_right_card_profile_main">
+                                  <div
+                                    class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                                  >
+                                    <div>
+                                      <img
+                                        src="./img/profile.png"
+                                        alt="Alexander Mark"
+                                        class="acc_right_card_profile_img_set"
+                                      />
+                                    </div>
+                                    <div
+                                      class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                                    >
+                                      <div class="acc_right_card_profile_name">
+                                        Alexander Mark
+                                      </div>
+                                      <div class="acc_right_card_profile_role">
+                                        Manager
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="acc_right_card_progress_bar_main">
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 15%"
+                                      aria-valuenow="15"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-success"
+                                      role="progressbar"
+                                      style="width: 30%"
+                                      aria-valuenow="30"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-info"
+                                      role="progressbar"
+                                      style="width: 20%"
+                                      aria-valuenow="20"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div
+                                class="d-flex flex-row justify-content-start align-items-center"
+                              >
+                                <div class="acc_right_card_profile_main">
+                                  <div
+                                    class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                                  >
+                                    <div>
+                                      <img
+                                        src="./img/profile.png"
+                                        alt="Alexander Mark"
+                                        class="acc_right_card_profile_img_set"
+                                      />
+                                    </div>
+                                    <div
+                                      class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                                    >
+                                      <div class="acc_right_card_profile_name">
+                                        Alexander Mark
+                                      </div>
+                                      <div class="acc_right_card_profile_role">
+                                        Manager
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="acc_right_card_progress_bar_main">
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 15%"
+                                      aria-valuenow="15"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-success"
+                                      role="progressbar"
+                                      style="width: 30%"
+                                      aria-valuenow="30"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-info"
+                                      role="progressbar"
+                                      style="width: 20%"
+                                      aria-valuenow="20"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div
+                                class="d-flex flex-row justify-content-start align-items-center"
+                              >
+                                <div class="acc_right_card_profile_main">
+                                  <div
+                                    class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                                  >
+                                    <div>
+                                      <img
+                                        src="./img/profile.png"
+                                        alt="Alexander Mark"
+                                        class="acc_right_card_profile_img_set"
+                                      />
+                                    </div>
+                                    <div
+                                      class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                                    >
+                                      <div class="acc_right_card_profile_name">
+                                        Alexander Mark
+                                      </div>
+                                      <div class="acc_right_card_profile_role">
+                                        Manager
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="acc_right_card_progress_bar_main">
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 15%"
+                                      aria-valuenow="15"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-success"
+                                      role="progressbar"
+                                      style="width: 30%"
+                                      aria-valuenow="30"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                    <div
+                                      class="progress-bar bg-info"
+                                      role="progressbar"
+                                      style="width: 20%"
+                                      aria-valuenow="20"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- 2nd accordion card body -->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- right side -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseThree"
+                  >
+                    <div
+                      class="d-flex flex-column justify-content-start align-items-start"
+                    >
+                      <div class="accordion_button_head">
+                        Creators Performance By Region
+                      </div>
+                      <div class="accordion_button_body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod.
+                      </div>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingThree"
+                >
+                  <div class="accordion-body">
+                    <!-- MAP START HERE -->
+          <div class="map">
+            <img class="cover-map" src="./img/Vector.png"/>
+          
+          <div class="content-map">
+            <img class="cover-map1" src="./img/facebook1.png"/>
+            <img class="cover-map2" src="./img/insta1.png"/>
+            <img class="cover-map3" src="./img/twitter1.png"/>
+            <img class="cover-map4" src="./img/snapchat1.png"/>
+            <img class="cover-map5" src="./img/youtube1.png"/>
+            <img class="cover-map6" src="./img/bar.png"/>
+            <img class="cover-map7" src="./img/menu.png"/>
+            <img class="cover-map8" src="./img/state.png"/>
+          </div>
+        </div>
+          <!-- MAP END HERE -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFour"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseFour"
+                  >
+                    <div
+                      class="d-flex flex-column justify-content-start align-items-start"
+                    >
+                      <div class="accordion_button_head">
+                        Creators performance by Demography
+                      </div>
+                      <div class="accordion_button_body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod.
+                      </div>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingFour"
+                >
+                  <div class="accordion-body">
+                    <div class="card forth-acc-card">
+                      <div class="card-body">
+                        <div class="forth-acc-dropdown">
+                          <div class="forth-acc-dropdown-title">
+                            Select Creators
+                          </div>
+                          <div class="dropdown">
+                            <button
+                              class="forth-acc-btn-sett dropdown-toggle"
+                              type="button"
+                              id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Dropdown button
+                            </button>
+                            <ul
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton1"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Action</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Another action</a
+                                >
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Something else here</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div
+                          class="d-flex flex-row justify-content-start align-items-center"
+                        >
+                          <div class="acc_right_card_profile_main">
+                            <div
+                              class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                            >
+                              <div>
+                                <img
+                                  src="./img/gender.png"
+                                  alt="Alexander Mark"
+                                  class="acc_right_card_profile_img_set"
+                                />
+                              </div>
+                              <div
+                                class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                              >
+                                <div class="acc_right_card_profile_name">
+                                  Gender
+                                </div>
+                                <div class="acc_right_card_profile_role">
+                                  2 Groups
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="acc_right_card_progress_bar_main">
+                            <div class="progress">
+                              <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 15%"
+                                aria-valuenow="15"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                              <div
+                                class="progress-bar bg-success"
+                                role="progressbar"
+                                style="width: 30%"
+                                aria-valuenow="30"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                              <div
+                                class="progress-bar bg-info"
+                                role="progressbar"
+                                style="width: 20%"
+                                aria-valuenow="20"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="d-flex flex-row justify-content-start align-items-center"
+                        >
+                          <div class="acc_right_card_profile_main">
+                            <div
+                              class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                            >
+                              <div>
+                                <img
+                                  src="./img/agegroup.png"
+                                  alt="Alexander Mark"
+                                  class="acc_right_card_profile_img_set"
+                                />
+                              </div>
+                              <div
+                                class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                              >
+                                <div class="acc_right_card_profile_name">
+                                  Age group
+                                </div>
+                                <div class="acc_right_card_profile_role">
+                                  4 Groups
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="acc_right_card_progress_bar_main">
+                            <div class="progress">
+                              <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 15%"
+                                aria-valuenow="15"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                              <div
+                                class="progress-bar bg-success"
+                                role="progressbar"
+                                style="width: 30%"
+                                aria-valuenow="30"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                              <div
+                                class="progress-bar bg-info"
+                                role="progressbar"
+                                style="width: 20%"
+                                aria-valuenow="20"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="d-flex flex-row justify-content-start align-items-center"
+                        >
+                          <div class="acc_right_card_profile_main">
+                            <div
+                              class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                            >
+                              <div>
+                                <img
+                                  src="./img/Industry.png"
+                                  alt="Alexander Mark"
+                                  class="acc_right_card_profile_img_set"
+                                />
+                              </div>
+                              <div
+                                class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                              >
+                                <div class="acc_right_card_profile_name">
+                                  Industry
+                                </div>
+                                <div class="acc_right_card_profile_role">
+                                  8 Groups
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="acc_right_card_progress_bar_main">
+                            <div class="progress">
+                              <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 15%"
+                                aria-valuenow="15"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                              <div
+                                class="progress-bar bg-success"
+                                role="progressbar"
+                                style="width: 30%"
+                                aria-valuenow="30"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                              <div
+                                class="progress-bar bg-info"
+                                role="progressbar"
+                                style="width: 20%"
+                                aria-valuenow="20"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFive"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseFive"
+                  >
+                    <div
+                      class="d-flex flex-column justify-content-start align-items-start"
+                    >
+                      <div class="accordion_button_head">
+                        Creator’s Performance By Languages
+                      </div>
+                      <div class="accordion_button_body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod.
+                      </div>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingFive"
+                >
+                  <div class="accordion-body">
+                    <div class="card forth-acc-card">
+                      <div class="card-body">
+                        <div class="forth-acc-dropdown">
+                          <div class="forth-acc-dropdown-title">
+                            Select Creators
+                          </div>
+                          <div class="dropdown">
+                            <button
+                              class="forth-acc-btn-sett dropdown-toggle"
+                              type="button"
+                              id="dropdownMenuButton2"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Dropdown button
+                            </button>
+                            <ul
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton2"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Action</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Another action</a
+                                >
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Something else here</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div
+                          class="d-flex flex-row justify-content-start align-items-center"
+                        >
+                          <div class="acc_right_card_profile_main">
+                            <div
+                              class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                            >
+                              <div>
+                                <img
+                                  src="./img/profile.png"
+                                  alt="Alexander Mark"
+                                  class="acc_right_card_profile_img_set"
+                                />
+                              </div>
+                              <div
+                                class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                              >
+                                <div class="acc_right_card_profile_name">
+                                  Henry Paul
+                                </div>
+                                <div class="acc_right_card_profile_role">
+                                  Model
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="acc_right_card_progress_bar_main">
+                            <div class="progress">
+                              <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 15%"
+                                aria-valuenow="15"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                              <div
+                                class="progress-bar bg-success"
+                                role="progressbar"
+                                style="width: 30%"
+                                aria-valuenow="30"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                              <div
+                                class="progress-bar bg-info"
+                                role="progressbar"
+                                style="width: 20%"
+                                aria-valuenow="20"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="d-flex flex-row justify-content-start align-items-center"
+                        >
+                          <div class="acc_right_card_profile_main">
+                            <div
+                              class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                            >
+                              <div>
+                                <img
+                                  src="./img/profile.png"
+                                  alt="Alexander Mark"
+                                  class="acc_right_card_profile_img_set"
+                                />
+                              </div>
+                              <div
+                                class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                              >
+                                <div class="acc_right_card_profile_name">
+                                  Noah Harris
+                                </div>
+                                <div class="acc_right_card_profile_role">
+                                  Photographer
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="acc_right_card_progress_bar_main">
+                            <div class="progress">
+                              <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 15%"
+                                aria-valuenow="15"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                              <div
+                                class="progress-bar bg-success"
+                                role="progressbar"
+                                style="width: 30%"
+                                aria-valuenow="30"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                              <div
+                                class="progress-bar bg-info"
+                                role="progressbar"
+                                style="width: 20%"
+                                aria-valuenow="20"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="d-flex flex-row justify-content-start align-items-center"
+                        >
+                          <div class="acc_right_card_profile_main">
+                            <div
+                              class="mx-2 d-flex flex-row justify-content-start align-items-center"
+                            >
+                              <div>
+                                <img
+                                  src="./img/profile.png"
+                                  alt="Alexander Mark"
+                                  class="acc_right_card_profile_img_set"
+                                />
+                              </div>
+                              <div
+                                class="mx-2 d-flex flex-column justify-content-start align-items-start"
+                              >
+                                <div class="acc_right_card_profile_name">
+                                  Jack Paul
+                                </div>
+                                <div class="acc_right_card_profile_role">
+                                  Influencer
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="acc_right_card_progress_bar_main">
+                            <div class="progress">
+                              <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 15%"
+                                aria-valuenow="15"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                              <div
+                                class="progress-bar bg-success"
+                                role="progressbar"
+                                style="width: 30%"
+                                aria-valuenow="30"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                              <div
+                                class="progress-bar bg-info"
+                                role="progressbar"
+                                style="width: 20%"
+                                aria-valuenow="20"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- accordion end -->
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
